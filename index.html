@@ -16,7 +16,7 @@ const products=[
 {id:2,name:'Jarro',cat:'Regalos',price:7990,img:'jarro_spiderman.jpg',outlet:false},
 {id:3,name:'Bolsa Sonic',cat:'Regalos',price:3990,img:'bolsa_sonic.jpg',outlet:false},
 {id:4,name:'Bolsa',cat:'Regalos',price:3990,img:'bolsa.jpg',outlet:false}];
-let cart=JSON.parse(localStorage.getItem('aykCart')||'[]');let filter='Todos';const cats=['Todos','Regalos','Personalizados','Tendencias','Papelería','AYK Outlet'];
+let cart=JSON.parse(localStorage.getItem('aykCart')||'[]');let filter='Todos';const cats=['Todos','Regalos','Squishis','Peluches','Tendencias','Accesorios','Personalizados','Temporada','Outlet'];
 const money=n=>'$'+Number(n).toLocaleString('es-CL');const save=()=>{localStorage.setItem('aykCart',JSON.stringify(cart));document.getElementById('count').textContent=cart.reduce((s,x)=>s+x.qty,0)};
 function renderFilters(){document.getElementById('filters').innerHTML=cats.map(c=>`<button class="pill ${filter===c?'btn primary':''}" onclick="setFilter('${c}')">${c}</button>`).join('')}
 function setFilter(c){filter=c;render()}
