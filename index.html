@@ -14,7 +14,7 @@ const products=[
 {id:1,name:'Mug personalizado',cat:'Personalizados',price:12990,img:'tazon_empresa.jpg',outlet:false},
 {id:2,name:'Vaso de vidrio personalizado',cat:'Personalizados',price:7990,img:'jarro_spiderman.jpg',outlet:false},
 {id:3,name:'Morral personalizado',cat:'Personalizados',price:2500,img:'bolsa_sonic.jpg',outlet:false},
-{id:4,name:'Tazón personalizado',cat:'Personalizados',price:3990,img:'tazon_empresa.jpg',outlet:false}];
+{id:4,name:'Tazón personalizado',cat:'Personalizados',price:3990,img:'tazon_empresa.jpg',outlet:false},
 let cart=JSON.parse(localStorage.getItem('aykCart')||'[]');let filter='Todos';const cats=['Todos','Regalos','Squishis','Peluches','Tendencias','Accesorios','Personalizados','Temporada','Outlet'];
 const money=n=>'$'+Number(n).toLocaleString('es-CL');const save=()=>{localStorage.setItem('aykCart',JSON.stringify(cart));document.getElementById('count').textContent=cart.reduce((s,x)=>s+x.qty,0)};
 function renderFilters(){document.getElementById('filters').innerHTML=cats.map(c=>`<button class="pill ${filter===c?'btn primary':''}" onclick="setFilter('${c}')">${c}</button>`).join('')}
