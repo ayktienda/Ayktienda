@@ -4,5 +4,5 @@ const products = [
   {id:3,name:'Morral personalizado',cat:'Personalizados',price:2490,img:'bolsa_sonic.jpg',outlet:false},
   {id:4,name:'Tazón personalizado',cat:'Personalizados',price:3990,img:'tazon_empresa.jpg',outlet:false},
   {id:5,name:'Llavero personalizado NFC',cat:'Personalizados',price:5990,img:'tazon_empresa.jpg',outlet:false},
-  {id:6,name:'Mousepad personalizado',cat:'Personalizados',price:3500,img:'tazon_empresa.jpg',outlet:false}
+  {id:6,name:'Mousepad personalizado',cat:'Personalizados',price:3490,img:'tazon_empresa.jpg',outlet:false}
 ];
